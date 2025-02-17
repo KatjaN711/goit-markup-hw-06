@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- #region header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a href="./index.html" class="logo-header"
@@ -50,17 +50,91 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" type="button">
+            <svg class="mobile-menu-button" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-nav-list">
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-item-link" href="./index.html">Studio</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-item-link" href="">Portfolio</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-item-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-address">
+            <ul class="mobile-address-list">
+              <li class="mobile-address-item">
+                <a href="mailto:info@devstudio.com" class="mobile-address-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-address-item">
+                <a href="tel:+110001111111" class="mobile-address-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="mobile-social">
+            <ul class="mobile-social-icons">
+              <li class="mobile-social-item">
+                <a href="#" class="mobile-icon-link">
+                  <svg class="mobile-team-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a href="#" class="mobile-icon-link">
+                  <svg class="mobile-team-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a href="#" class="mobile-icon-link">
+                  <svg class="mobile-team-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a href="#" class="mobile-icon-link">
+                  <svg class="mobile-team-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- #endregion -->
     <main>
       <!-- ======== Section - Hero ======= -->
-      <!-- <section class="hero">
-        <div class="container">
+      <section class="hero">
+        <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button">Order Service</button>
         </div>
-      </section> -->
+      </section>
       <!-- ============ Features ============== -->
       <section class="features">
         <div class="container">
@@ -118,13 +192,14 @@
         </div>
       </section>
       <!-- ============= Team ============== -->
-      <!-- <section class="team">
+      <section class="team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
               <img
-                src="./images/section3-hw2/mark-guerrero.jpg"
+                srcset="./images/mark-guerrero-2X.jpg 2x"
+                src="./images/mark-guerrero.jpg"
                 alt="Mark Guerrero avatar"
                 width="264"
                 height="260"
@@ -166,6 +241,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/section3-hw2/tom-ford-2X.jpg 2x"
                 src="./images/section3-hw2/tom-ford.jpg"
                 alt="Tom Ford avatar"
                 width="264"
@@ -208,6 +284,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/section3-hw2/camila-garcia-2X.jpg 2x"
                 src="./images/section3-hw2/camila-garcia.jpg"
                 alt="Camila Garcia avatar"
                 width="264"
@@ -250,6 +327,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/section3-hw2/daniel-wilson-2X.jpg 2x"
                 src="./images/section3-hw2/daniel-wilson.jpg"
                 alt="Daniel Wilson avatar"
                 width="264"
@@ -292,9 +370,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--================ Portfolio ==============-->
-      <!-- <section class="portfolio">
+      <section class="portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -305,6 +383,7 @@
                   alt="Banking App avatar"
                   width="360"
                   height="300"
+                  class="img-portfolio"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -414,7 +493,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- ========== Footer============= -->
     <!-- <footer class="footer">
