@@ -345,6 +345,7 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
   @media screen and (min-resolution: 2x) {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -428,6 +429,7 @@ button {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/bg-hero1.jpg);
+
     @media screen and (min-resolution: 2x) {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
@@ -1131,7 +1133,6 @@ footer .span-logo {
   color: #8e8f99;
   display: flex;
   align-items: center;
-  flex-shrink: none;
 }
 .modal-check-item {
   width: 16px;
